@@ -84,8 +84,45 @@ html{
 body{
     background: #eee;
 }
+main{
+    padding: 10rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
+.main_container {
+    padding: 10rem 9%;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Add space between text and image */
+    gap: 2rem; /* Add spacing between the text and image */
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 1200px;
+}
 
+.main_container .main_text {
+    flex: 1;
+    display: flex; /* Enable Flexbox for the text container */
+    flex-direction: column; /* Stack text elements vertically */
+    align-items: center; /* Horizontally center the text */
+    justify-content: center; /* Vertically center the text */
+    padding: 2rem;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+    text-align: center; /* Center-align the text content */
+}
+.main_image img {
+    width: 50%; /* Make the image responsive */
+    max-width: 400px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #000; /* Add a border */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing above the image */
+}
 
 
 
